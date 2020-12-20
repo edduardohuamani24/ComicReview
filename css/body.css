@@ -1,0 +1,56 @@
+:root {
+  --fondo-claro: #838179;
+  --fondo-oscuro: #272624;
+  --color-primario-claro: #5483D0;
+  --color-primario-oscuro: #385D9A;
+  --color-secundario-claro: #F14E2D;
+  --color-secundario-oscuro: #C13F24;
+  --color-blanco: #fff;
+  --color-blanco--opaco: #E5E3E2;
+  --fuente-primaria: 'Raleway', sans-serif;
+}
+
+body {
+  background-color: var(--fondo-oscuro);
+  color: var(--color-blanco);
+  font-family: var(--fuente-primaria);
+  font-size: 16px;
+}
+
+.container {
+  width: 90vw;
+  /*PARA TENER 5% EN LADO IZQUIERDO Y OROS 5% EN EL LADO DERECHO DE LA PÁGINA*/
+  /* height: 100hw; */
+  margin: 0 auto;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, auto);
+  grid-gap: 5px;
+  display: grid;
+  grid-template-areas: "header header header" "nav nav nav" "content content content" "footer footer footer"
+}
+
+/* .container > div,
+.container .header,
+.container .nav,
+.container .content,
+.container .section,
+.container .footer {
+    border-style: solid;
+    border-color: var(--color-blanco);   
+}  */
+
+.container .header {
+  grid-area: header;
+}
+
+.container .nav {
+  grid-area: nav;
+}
+
+.container .content {
+  grid-area: content;
+}
+
+.container .footer {
+  grid-area: footer;
+}
