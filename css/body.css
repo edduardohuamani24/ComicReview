@@ -1,3 +1,4 @@
+@import "normalize.css";
 :root {
   --fondo-claro: #838179;
   --fondo-oscuro: #272624;
@@ -18,26 +19,15 @@ body {
 }
 
 .container {
-  width: 90vw;
-  /*PARA TENER 5% EN LADO IZQUIERDO Y OROS 5% EN EL LADO DERECHO DE LA PÁGINA*/
-  /* height: 100hw; */
+  width: 90%;
+  height: 100vh;
   margin: 0 auto;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(4, auto);
-  grid-gap: 5px;
+  grid-template-rows: repeat(5, auto);
+  grid-gap: 0.3125rem;
   display: grid;
-  grid-template-areas: "header header header" "nav nav nav" "content content content" "footer footer footer"
+  grid-template-areas: "header header" "nav nav" "main main" "footer footer"
 }
-
-/* .container > div,
-.container .header,
-.container .nav,
-.container .content,
-.container .section,
-.container .footer {
-    border-style: solid;
-    border-color: var(--color-blanco);   
-}  */
 
 .container .header {
   grid-area: header;
@@ -47,10 +37,16 @@ body {
   grid-area: nav;
 }
 
-.container .content {
-  grid-area: content;
+.container .main {
+  grid-area: main;
 }
 
 .container .footer {
   grid-area: footer;
+}
+
+@media(max-width:48rem) {
+  body {
+    font-size: 0.75rem;
+  }
 }

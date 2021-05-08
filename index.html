@@ -4,11 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/body.css">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/header.css">
-  <link rel="stylesheet" href="css/nav.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/header/header.css">
+  <link rel="stylesheet" href="css/main/main.css">
   <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Roboto:wght@100&display=swap" rel="stylesheet">
   <title>LaLoReseñas</title>
 </head>
@@ -25,12 +22,12 @@
 
         <div class="search">
           <form class="search__form">
-            <!-- <fieldset class="search__fieldset">     -->
+
             <input class="search__input" type="search" placeholder="Escribe aquí..." autocomplete="off" />
             <button type="button" class="search__button">
               Buscar
             </button>
-            <!-- </fieldset>     -->
+
           </form>
         </div>
 
@@ -57,19 +54,24 @@
       </div>
     </nav>
 
-    <main class="content">
+    <main class="main">
       <section class="section">
-        <h2>Última reseñas</h2>
+        <h2 class="section__title">Última reseña</h2>
         <article>
-          <div class="comic__container">
-            <h3>Veneno Greatest hits</h3>
-            <p>Comic del antihéroe Venom en su época de villano, cuando tenía como único objetivo acabar con Spiderman.
-            </p>
-          </div>
-          <div class="comic__container">
-            <h3>Spiderman entre los muertos</h3>
-            <p>Peter Parker tiene que liar con la desaparición de su Tía May, porque su identidad secreta fue
-              descubierta. </p>
+
+          <div class="comic">
+
+            <h3 class="comic__title">Spiderman entre los muertos</h3>
+
+
+            <p class="comic__argument">Peter Parker lidia con el secuestro de su Tía May, porque su identidad secreta
+              fue descubierta por alguno
+              de sus peores enemigos. </p>
+
+            <img class="comic__cover" src="img/entre_los_muertos.jpg"
+              alt="Portada del comic Spiderman Entre los muertos">
+
+
           </div>
         </article>
       </section>

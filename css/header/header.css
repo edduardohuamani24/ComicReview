@@ -1,17 +1,4 @@
-:root {
-  --fondo-claro: #838179;
-  --fondo-oscuro: #272624;
-  --color-primario-claro: #5483D0;
-  --color-primario-oscuro: #385D9A;
-  --color-secundario-claro: #F62E1D;
-  --color-secundario-oscuro: #C13F24;
-  --color-blanco: #fff;
-  --color-blanco--opaco: #E5E3E2;
-  --color-negro: #000;
-  --fuente-primaria: 'Raleway', sans-serif;
-  --fuente-secundaria: 'Roboto', sans-serif;
-}
-
+@import "nav.css";
 .header {
   min-height: 6.25em;
   padding-top: 1.25em;
@@ -52,12 +39,6 @@
   display: flex;
   flex: 1 1 auto;
 }
-
-/* .search__fieldset {
-    flex-grow: 1;
-    display: flex;
-    border: none;   
-} */
 
 .search__input {
   flex: 5 1 auto;

@@ -1,0 +1,28 @@
+@import "../body.css";
+.nav__container {
+  flex: 1 1 auto;
+  background-color: var(--color-primario-oscuro);
+  display: flex;
+  border: solid 0.3125rem var(--color-secundario-claro);
+}
+
+.nav__list {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+.nav__link {
+  color: var(--color-negro);
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0.9375rem 0.9375rem;
+}
+
+.nav__link:hover {
+  color: var(--color-secundario-claro);
+  background-color: var(--fondo-oscuro);
+}
