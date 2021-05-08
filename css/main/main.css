@@ -5,7 +5,7 @@
 }
 
 .section__title {
-  font-size: 3vw;
+  font-size: 2.5vw;
 }
 
 .comic {
@@ -27,8 +27,12 @@
 
 .comic__argument {
   font-size: 2vw;
-  position: absolute;
-  padding-top: 80px;
+  padding: 10px 10px;
+  margin: 0 auto;
+  background-color: var(--color-blanco);
+  color: var(--color-negro);
+  text-align: justify;
+  font-weight: bolder;
 }
 
 .comic__cover {

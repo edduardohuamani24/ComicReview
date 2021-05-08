@@ -13,7 +13,7 @@
 
 .logo {
   background-color: var(--color-primario-claro);
-  color: var(--color-negro);
+  color: var(--fondo-oscuro);
   border-radius: 0.625em;
   height: 50px;
   display: flex;
