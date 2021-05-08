@@ -15,7 +15,7 @@
   background-color: var(--color-primario-claro);
   color: var(--fondo-oscuro);
   border-radius: 0.625em;
-  height: 50px;
+  height: 3.125rem;
   display: flex;
   align-items: center;
   padding: 0 0.3125em;
@@ -65,4 +65,14 @@
   font-weight: bold;
   background-color: var(--color-primario-claro);
   color: var(--fondo-oscuro);
+}
+
+@media (max-width:48rem) {
+  .header__container {
+    flex-direction: column;
+    padding: 0.625rem 0.625rem;
+  }
+  .logo {
+    margin-bottom: 0.625rem;
+  }
 }

@@ -27,7 +27,7 @@
 
 .comic__argument {
   font-size: 2vw;
-  padding: 10px 10px;
+  padding: 0.625rem 0.625rem;
   margin: 0 auto;
   background-color: var(--color-blanco);
   color: var(--color-negro);

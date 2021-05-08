@@ -26,3 +26,9 @@
   color: var(--color-secundario-claro);
   background-color: var(--fondo-oscuro);
 }
+
+@media (max-width:48rem) {
+  .nav__container {
+    margin-top: 3.125rem;
+  }
+}
