@@ -29,6 +29,6 @@
 
 @media (max-width:48rem) {
   .nav__container {
-    margin-top: 3.125rem;
+    margin-top: 10px;
   }
 }

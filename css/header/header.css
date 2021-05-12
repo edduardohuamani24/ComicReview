@@ -1,24 +1,24 @@
 @import "nav.css";
 .header {
-  min-height: 6.25em;
-  padding-top: 1.25em;
+  min-height: 6.25rem;
+  padding-top: 0.875rem;
 }
 
 .header__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 1em 0;
+  margin: 1rem 0;
 }
 
 .logo {
   background-color: var(--color-primario-claro);
   color: var(--fondo-oscuro);
-  border-radius: 0.625em;
+  border-radius: 0.625rem;
   height: 3.125rem;
   display: flex;
   align-items: center;
-  padding: 0 0.3125em;
+  padding: 0 0.3125rem;
 }
 
 .logo__text {
@@ -32,7 +32,7 @@
 
 .search {
   display: flex;
-  width: 18.75em;
+  width: 18.75rem;
 }
 
 .search__form {
@@ -42,7 +42,7 @@
 
 .search__input {
   flex: 5 1 auto;
-  padding: 0.4375em 0.625em;
+  padding: 0.4375rem 0.625rem;
   font-size: 0.875rem;
   border: none;
   border-top-left-radius: 0.8125em;
@@ -70,9 +70,13 @@
 @media (max-width:48rem) {
   .header__container {
     flex-direction: column;
-    padding: 0.625rem 0.625rem;
+    margin: auto;
+    min-height: 6.25rem;
   }
   .logo {
-    margin-bottom: 0.625rem;
+    margin-top: 0.1875rem;
+  }
+  .search {
+    margin-bottom: 0.5rem;
   }
 }
