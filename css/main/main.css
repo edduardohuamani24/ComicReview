@@ -1,4 +1,8 @@
 @import "../body.css";
+.main {
+  flex-grow: 1;
+}
+
 .section {
   margin: 0.625rem 0;
   padding: 0 0.625rem;

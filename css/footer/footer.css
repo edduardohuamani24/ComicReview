@@ -1,0 +1,60 @@
+@import "../body.css";
+.footer {
+  min-height: 6.25rem;
+  padding: 1.25rem;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 0.0625rem solid var(--color-blanco);
+}
+
+.footer__descriptionContainer {
+  color: var(--color-blanco);
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin-bottom: 3.125rem;
+}
+
+.footer__question {
+  border-bottom: 0.0625rem solid var(--color-secundario-oscuro);
+  width: 10rem;
+}
+
+.footer__answer {
+  font: bold 14px Arial, sans-serif;
+  margin-top: 20px;
+}
+
+.footer__socialContainer {
+  margin: 0 5rem 0 0;
+}
+
+.footer__social {
+  text-align: center;
+}
+
+.footer__links {
+  list-style: none;
+  margin-bottom: 55px;
+}
+
+.footer__items {
+  line-height: 1.5625rem;
+  cursor: pointer;
+}
+
+.facebook {
+  color: #3b5998;
+}
+
+.twitter {
+  color: #00acee;
+}
+
+.youtube {
+  color: #c4302b
+}
