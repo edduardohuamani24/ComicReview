@@ -1,13 +1,12 @@
 @import "../body.css";
 .footer {
-  min-height: 6.25rem;
-  padding: 1.25rem;
+  min-height: 25vh;
 }
 
 .footer__container {
+  height: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   border-top: 0.0625rem solid var(--color-blanco);
 }
 
@@ -15,35 +14,38 @@
   color: var(--color-blanco);
   display: flex;
   flex-direction: column;
-  align-content: center;
-  margin-bottom: 3.125rem;
+  margin-bottom: 0.9375rem;
 }
 
 .footer__question {
-  border-bottom: 0.0625rem solid var(--color-secundario-oscuro);
-  width: 10rem;
+  font: italic bold 150% Georgia, serif;
+  margin-bottom: 0.625rem;
 }
 
 .footer__answer {
-  font: bold 14px Arial, sans-serif;
-  margin-top: 20px;
+  font: bold 100% Arial, sans-serif;
 }
 
 .footer__socialContainer {
-  margin: 0 5rem 0 0;
+  margin: auto;
+  border-left: 0.0625rem solid var(--color-secundario-claro);
+  padding-left: 3.125rem;
 }
 
 .footer__social {
-  text-align: center;
+  color: var(--color-secundario-oscuro);
 }
 
 .footer__links {
   list-style: none;
-  margin-bottom: 55px;
+  display: flex;
+  justify-content: space-evenly;
+  border: 0.125rem solid var(--color-blanco);
+  padding: 0.625rem;
 }
 
 .footer__items {
-  line-height: 1.5625rem;
+  line-height: 1.875rem;
   cursor: pointer;
 }
 
@@ -57,4 +59,29 @@
 
 .youtube {
   color: #c4302b
+}
+
+.instagram {
+  color: #ff0080;
+}
+
+@media (max-width:48rem) {
+  .footer__container {
+    flex-direction: column;
+    padding-top: 0.625rem;
+  }
+  .footer__question {
+    text-align: center;
+  }
+  .footer__answer {
+    font: bold 120% Arial, sans-serif;
+    text-align: justify;
+  }
+  .footer__socialContainer {
+    border-left: 0rem;
+    margin-bottom: 0.9375rem;
+  }
+  .footer__social {
+    font: bold 150% Arial, sans-serif;
+  }
 }

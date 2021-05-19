@@ -1,5 +1,6 @@
 @import "../body.css";
 .main {
+  /* Para evitar el sticky footer */
   flex-grow: 1;
 }
 

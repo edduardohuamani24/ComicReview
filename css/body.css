@@ -12,6 +12,10 @@
   --fuente-primaria: 'Raleway', sans-serif;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: var(--fondo-oscuro);
   color: var(--color-blanco);
@@ -22,9 +26,7 @@ body {
 
 .container {
   width: 90%;
-  height: 100vh;
   margin: 0 auto;
-  box-sizing: border-box;
   grid-template-rows: repeat(4, auto);
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 0.3125rem;
