@@ -87,10 +87,10 @@
     margin-top: 0.1875rem;
   }
   .search {
-    margin-bottom: 0.5rem;
+    margin-top: 0.625rem;
+    padding: 0.5rem;
   }
   .social__line {
-    border: none;
-    padding-right: 0rem;
+    display: none;
   }
 }
