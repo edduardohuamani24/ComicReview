@@ -80,6 +80,7 @@
   .footer__socialContainer {
     border-left: 0rem;
     margin-bottom: 0.9375rem;
+    padding-left: 0;
   }
   .footer__social {
     font: bold 150% Arial, sans-serif;
