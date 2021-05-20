@@ -89,4 +89,8 @@
   .search {
     margin-bottom: 0.5rem;
   }
+  .social__line {
+    border: none;
+    padding-right: 0rem;
+  }
 }
