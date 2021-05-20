@@ -18,6 +18,7 @@
   display: flex;
   align-items: center;
   padding: 0 0.3125rem;
+  margin-left: 0.625rem;
 }
 
 .logo__text {
@@ -29,9 +30,19 @@
   font-weight: bold;
 }
 
+.social__line {
+  border-right: 0.0625rem solid var(--color-secundario-claro);
+  padding-right: 3.125rem;
+}
+
+.social__color {
+  color: var(--color-blanco);
+}
+
 .search {
   display: flex;
   width: 18.75rem;
+  margin-right: 0.625rem;
 }
 
 .search__form {
