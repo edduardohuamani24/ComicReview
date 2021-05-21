@@ -28,8 +28,11 @@
 
 .social {
   margin: auto;
+}
+
+.social__border {
   border-left: 0.0625rem solid var(--color-secundario-claro);
-  padding-left: 3.125rem;
+  padding-left: 30px;
 }
 
 .social__title {
@@ -41,10 +44,6 @@
   display: flex;
   justify-content: space-evenly;
   padding: 0.625rem;
-}
-
-.social__border {
-  border: 0.125rem solid var(--color-blanco);
 }
 
 .social__items {
@@ -68,7 +67,7 @@
   color: #ff0080;
 }
 
-@media (max-width:48rem) {
+@media screen and (max-width:50rem) {
   .footer__container {
     flex-direction: column;
     padding-top: 0.625rem;
@@ -81,8 +80,10 @@
     text-align: justify;
   }
   .social {
-    border-left: 0rem;
     margin-bottom: 0.9375rem;
+  }
+  .social__border {
+    border: none;
     padding-left: 0;
   }
   .social__title {

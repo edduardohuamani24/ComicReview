@@ -50,7 +50,7 @@ body {
   grid-area: footer;
 }
 
-@media(max-width:48rem) {
+@media screen and (max-width:50rem) {
   body {
     font-size: 0.75rem;
   }

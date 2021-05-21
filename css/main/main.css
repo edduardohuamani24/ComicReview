@@ -41,17 +41,21 @@
 }
 
 .comic__cover {
-  height: 100%;
-  width: 100%;
+  height: auto;
+  /* Se coloca la propiedad max-width para que la propiedad no se pixelee al pasar el tamaño original */
+  max-width: 100%;
   object-fit: cover;
   /* object-position: center top; */
 }
 
-@media(max-width:48rem) {
+@media screen and (max-width:50rem) {
   .section__title {
     text-align: center;
   }
   .comic {
     margin: 0 auto;
   }
+  /* .comic__cover {
+    max-width: 100%;
+  } */
 }
