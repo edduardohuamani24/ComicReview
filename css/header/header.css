@@ -36,14 +36,14 @@
   min-width: 8.75rem;
 }
 
-.social__links {
+.social__list {
   list-style: none;
   display: flex;
   justify-content: space-evenly;
   padding: 0.625rem;
 }
 
-.social__items {
+.social__item {
   line-height: 1.875rem;
   cursor: pointer;
 }
@@ -88,6 +88,8 @@
 .search__input::-webkit-search-cancel-button {
   -webkit-appearance: none;
 }
+
+/*La propiedad outline permnite quitar los contornos por defecto del input*/
 
 .search__input:focus {
   border: 2px solid var(--color-secundario-claro);
