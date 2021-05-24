@@ -26,45 +26,17 @@
   font: bold 100% Arial, sans-serif;
 }
 
-.social {
+.social__footer {
   margin: auto;
 }
 
-.social__border {
+.social__footer-border {
   border-left: 0.0625rem solid var(--color-secundario-claro);
   padding-left: 30px;
 }
 
-.social__title {
+.social__footer-subtitle {
   color: var(--color-secundario-oscuro);
-}
-
-.social__links {
-  list-style: none;
-  display: flex;
-  justify-content: space-evenly;
-  padding: 0.625rem;
-}
-
-.social__items {
-  line-height: 1.875rem;
-  cursor: pointer;
-}
-
-.facebook {
-  color: #3b5998;
-}
-
-.twitter {
-  color: #00acee;
-}
-
-.youtube {
-  color: #c4302b
-}
-
-.instagram {
-  color: #ff0080;
 }
 
 @media screen and (max-width:50rem) {
@@ -79,10 +51,10 @@
     font: bold 120% Arial, sans-serif;
     text-align: justify;
   }
-  .social {
+  .social__footer {
     margin-bottom: 0.9375rem;
   }
-  .social__border {
+  .social__footer-border {
     border: none;
     padding-left: 0;
   }

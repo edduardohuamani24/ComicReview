@@ -16,37 +16,32 @@
 <body>
   <div class="container">
     <header class="header">
-      <div class="header__container">
-        <div class="logo">
-          <h1 class="logo__text">
-            <span class="logo__text--red">LALO&nbsp;</span>RESEÑAS
-          </h1>
-        </div>
-        <div class="social social__icons">
-          <h2 class="social__color">Síguenos en</h2>
-          <ul class="social__links">
-            <li> <i class="fab fa-facebook-f social__items facebook"></i></li>
-            <li> <i class="fab fa-twitter social__items twitter"></i></li>
-            <li> <i class="fab fa-youtube social__items youtube"></i></li>
-            <li> <i class="fab fa-instagram social__items instagram"></i></li>
-          </ul>
-        </div>
-        <div class="search">
-          <form class="search__form">
+      <div class="logo">
+        <h1 class="logo__text">
+          <span class="logo__text--red">LALO&nbsp;</span>RESEÑAS
+        </h1>
+      </div>
+      <button class="icon-button">
+        <i class=" fas fa-search  icon-responsive search__icon"></i>
+      </button>
 
-            <input class="search__input" type="search" placeholder="Escribe aquí..." maxlength="128"
-              autocomplete="off" />
-            <button type="button" class="search__button">
-              Buscar
-            </button>
-
-          </form>
-        </div>
-
-
+      <div class="social">
+        <ul class="social__links">
+          <li> <i class="fab fa-facebook-f social__items facebook"></i></li>
+          <li> <i class="fab fa-twitter social__items twitter"></i></li>
+          <li> <i class="fab fa-youtube social__items youtube"></i></li>
+          <li> <i class="fab fa-instagram social__items instagram"></i></li>
+        </ul>
+      </div>
+      <div class="search search-responsive">
+        <form class="search__form">
+          <input class="search__input" type="search" placeholder="Buscar..." maxlength="128" autocomplete="off" />
+          <button type="button" class="search__button">
+            <i class="fas fa-search search__icon"></i>
+          </button>
+        </form>
       </div>
     </header>
-
     <nav class="nav">
       <div class="nav__container">
         <ul class="nav__list">
@@ -65,17 +60,12 @@
         </ul>
       </div>
     </nav>
-
     <main class="main">
       <section class="section">
-        <h3 class="section__title">Última reseña</h3>
+        <h2 class="section__title">Última reseña</h2>
         <article>
-
           <div class="comic">
-
-            <h4 class="comic__title">Spiderman entre los muertos</h4>
-
-
+            <h3 class="comic__title">Spiderman entre los muertos</h3>
             <p class="comic__argument">Peter Parker, Spiderman, lidia con el secuestro de su tía May, porque su
               identidad
               secreta
@@ -83,21 +73,12 @@
               de sus peores enemigos. Esta emocionante historia está compuesta por 12 partes, las cuales están
               incluidas.
               en este tomo.</p>
-
             <img class="comic__cover" src="img/entre_los_muertos.jpg"
               alt="Portada del comic Spiderman Entre los muertos">
-
-
           </div>
         </article>
       </section>
-
-
-
     </main>
-
-
-
     <footer class="footer">
       <div class="footer__container">
         <div class="description">
@@ -106,8 +87,8 @@
             grupo de
             personajes de historietas.</p>
         </div>
-        <div class="social social__border">
-          <h3 class="social__title">Redes Sociales</h3>
+        <div class="social__footer social__footer-border">
+          <h3 class="social__footer-subtitle">Redes Sociales</h3>
           <ul class="social__links">
             <li> <i class="fab fa-facebook-f social__items facebook"></i></li>
             <li> <i class="fab fa-twitter social__items twitter"></i></li>
@@ -119,6 +100,7 @@
     </footer>
   </div>
   <script src="js/main.js"></script>
+  <script src="js/validateIconSearch.js" type="module"></script>
 </body>
 
 </html>
