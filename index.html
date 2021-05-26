@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/header/header.css">
   <link rel="stylesheet" href="css/nav/nav.css">
   <link rel="stylesheet" href="css/main/main.css">
@@ -43,30 +44,65 @@
       </div>
     </header>
     <nav class="nav">
-      <div class="nav__container">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a href="#" class="nav__link">Inicio</a>
-          </li>
-          <li class="nav__item">
-            <a href="#" id="marvel-comics" class="nav__link">Marvel</a>
-          </li>
-          <li class="nav__item">
-            <a href="#" id="dc-comics" class="nav__link">Dc Comics</a>
-          </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link">Otras editoriales</a>
-          </li>
-        </ul>
-      </div>
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="#" class="nav__link">Inicio</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Marvel
+            <i class="fas fa-caret-down nav__item-icon"></i>
+          </a>
+          <ul class="nav__subitems-list nav__subitems-hide">
+            <li class="nav__item">
+              <a href="#" class="nav__link">Avengers</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Spiderman </a>
+            </li>
+            <li class=" nav__item">
+              <a href="#" class="nav__link">Venom</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Dc Comics
+            <i class="fas fa-caret-down nav__item-icon""></i>
+          </a>
+                  <ul class=" nav__subitems-list nav__subitems-hide">
+        <li class="nav__item">
+          <a href="#" class="nav__link">Batman</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Superman</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Flash</a>
+        </li>
+      </ul>
+      </li>
+      <li class="nav__item">
+        <a href=" #" class="nav__link">Otras editoriales
+          <i class="fas fa-caret-down nav__item-icon""></i>
+        </a>
+          <ul class=" nav__subitems-list nav__subitems-hide">
+      <li class="nav__item">
+        <a href="#" class="nav__link">Dark Horse</a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link">image Comics</a>
+      </li>
+      </ul>
+      </li>
+      </ul>
     </nav>
-    <main class="main">
+    <main class=" main">
       <section class="section">
         <h2 class="section__title">Última reseña</h2>
         <article>
           <div class="comic">
             <h3 class="comic__title">Spiderman entre los muertos</h3>
-            <p class="comic__argument">Peter Parker, Spiderman, lidia con el secuestro de su tía May, porque su
+            <p class="comic__argument">Peter Parker, Spiderman, lidia con el secuestro de su tía May, porque
+              su
               identidad
               secreta
               fue descubierta por alguno
@@ -82,7 +118,8 @@
       <div class="footer__container">
         <div class="description">
           <h3 class="description__question">¿Quiénes somos?</h3>
-          <p class="description__answer">Realizamos recomendaciones de como empezar a leer determinando personaje o
+          <p class="description__answer">Realizamos recomendaciones de como empezar a leer determinando
+            personaje o
             grupo de
             personajes de historietas.</p>
         </div>
@@ -98,7 +135,7 @@
       </div>
     </footer>
   </div>
-  <script src="js/main.js"></script>
+  <!-- <script src="js/main.js"></script> -->
   <script src="js/validateInputSearch.js" type="module"></script>
 </body>
 
