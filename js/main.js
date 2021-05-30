@@ -1,10 +1,5 @@
-let marvel_comics = document.getElementById("marvel-comics");
-let dc_comics = document.getElementById("dc-comics");
-
-marvel_comics.addEventListener("click", function () {
-  window.location = "marvel.html";
-});
-
-dc_comics.addEventListener("click", function () {
-  window.location = "dc.html";
-});
+import { iconSearch } from "./show_input_search.js";
+import { validateInputSearch } from "./validate_input_search.js";
+import { showHideNav } from "./show_hide_nav.js";
+iconSearch.addEventListener("click", validateInputSearch);
+showHideNav();

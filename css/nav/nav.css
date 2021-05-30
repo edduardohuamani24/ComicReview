@@ -4,7 +4,10 @@
   display: flex;
   border: solid 3px var(--color-secundario-claro);
   min-width: 100%;
-  max-height: 60%;
+  height: 45px;
+  position: sticky;
+  top: 0;
+  transition: top 0.5s;
 }
 
 .nav__list {
@@ -26,7 +29,6 @@
   color: var(--color-blanco);
   font-weight: bold;
   text-decoration: none;
-  padding: 7px 16px;
 }
 
 .nav__item-icon {
@@ -41,7 +43,8 @@
   margin-top: 0.75rem;
   padding-left: 0;
   border: solid 0.1875rem var(--color-secundario-claro);
-  min-width: 8.125rem;
+  min-width: 100px;
+  max-width: 130px;
 }
 
 .nav__subitems-hide {
@@ -55,6 +58,21 @@
 
 .nav__item:hover>ul {
   display: block;
+}
+
+/*ESTILOS DEL NAV CON LA LIBRERÍA HEADROOM*/
+
+.headroom {
+  will-change: transform;
+  transition: transform 200ms linear;
+}
+
+.headroom--pinned {
+  transform: translateY(0%);
+}
+
+.headroom--unpinned {
+  transform: translateY(-100%);
 }
 
 @media screen and (max-width: 50rem) {
