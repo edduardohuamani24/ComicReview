@@ -4,9 +4,10 @@
   display: flex;
   border: solid 3px var(--color-secundario-claro);
   min-width: 100%;
-  height: 45px;
+  height: 2.8125rem;
   position: sticky;
   top: 0;
+  /* Se agregó una transición al top de medio segundo cuando aparezca y desaparezca la barra de navegación */
   transition: top 0.5s;
 }
 
