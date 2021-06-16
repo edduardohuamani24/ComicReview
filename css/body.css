@@ -8,8 +8,11 @@
   --color-secundario-oscuro: #C13F24;
   --color-blanco: #fff;
   --color-negro: #000;
-  --color-blanco--opaco: #E5E3E2;
   --fuente-primaria: 'Raleway', sans-serif;
+  --facebook: #3b5998;
+  --twitter: #00acee;
+  --youtube: #c4302b;
+  --instagram: #ff0080
 }
 
 * {
@@ -50,9 +53,10 @@ body {
   grid-area: footer;
 }
 
-@media screen and (max-width:50rem) {
+@media screen and (max-width:48rem) {
   body {
     font-size: 0.75rem;
+    overflow: hidden;
   }
   .container {
     grid-template: 4fr/ 1fr;

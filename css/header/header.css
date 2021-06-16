@@ -1,3 +1,4 @@
+@import "../body.css";
 .header {
   min-height: 15%;
   min-width: 100%;
@@ -49,19 +50,19 @@
 }
 
 .facebook {
-  color: #3b5998;
+  color: var(--facebook);
 }
 
 .twitter {
-  color: #00acee;
+  color: var(--twitter);
 }
 
 .youtube {
-  color: #c4302b
+  color: var(--youtube);
 }
 
 .instagram {
-  color: #ff0080;
+  color: var(--instagram);
 }
 
 .search {
@@ -109,42 +110,40 @@
   color: var(--color-blanco);
 }
 
-@media screen and (max-width:50rem) {
+@media screen and (max-width:48rem) {
   .header {
     flex-direction: column;
-    margin: auto;
   }
   .logo__text {
     font-size: 1.1rem;
   }
   .icon-button {
-    display: flex;
-    align-items: center;
-    margin-left: 11.25rem;
     position: absolute;
-    min-height: 2.5rem;
+    display: block;
+    /*align-self con la propiedad flex end para enviar el botón al final del viewport*/
+    align-self: flex-end;
+    margin-top: 0.625rem;
     background: none;
     border: none;
     cursor: pointer;
   }
+  /*EL FORM DEL INPUT ESTÁRA OCULTO Y PARA VISUALIZARCE SE REALIZARÁ MEDIANTE UN CLICK EN EL ICONO*/
   .search-responsive {
     display: none;
   }
   .search {
     margin-top: 0.625rem;
     padding: 0.5rem;
-    min-width: 70%;
-  }
-  .search__form {
-    flex-basis: 100%;
+    min-width: 40%;
   }
   .search__input {
     border-radius: 8125em;
-    flex-grow: 1;
   }
+  /*El botón del input en modo desktop se oculta*/
   .search__button {
     display: none;
   }
+  /*Las redes sociales también desaparecen*/
   .social {
     display: none;
   }

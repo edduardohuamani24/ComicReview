@@ -1,4 +1,3 @@
-@import "../body.css";
 .main {
   /* Para evitar el sticky footer */
   flex-grow: 1;
@@ -48,7 +47,7 @@
   /* object-position: center top; */
 }
 
-@media screen and (max-width:50rem) {
+@media screen and (max-width:48rem) {
   .section__title {
     text-align: center;
   }
