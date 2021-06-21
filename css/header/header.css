@@ -93,7 +93,7 @@
 /*La propiedad outline permnite quitar los contornos por defecto del input*/
 
 .search__input:focus {
-  border: 2px solid var(--color-secundario-claro);
+  border: 0.125rem solid var(--color-secundario-claro);
   outline: none;
 }
 

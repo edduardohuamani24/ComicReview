@@ -9,42 +9,68 @@
 }
 
 .section__title {
-  font-size: 2.5vw;
+  text-align: center;
+  font-size: 2rem;
 }
 
 .comic {
-  border-style: solid;
-  border-color: brown;
-  padding-top: 0.3125rem;
-  width: 50%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
+  /*LE DAMOS UNA ALTURA MÁXIMA AL CONTENEDOR DE LOS COMICS*/
+  max-height: 59.375rem;
+}
+
+.comic__item {
+  /*SE USA UN EL SHORTHAND DE BORDER PARA DARLE WIDTH, STYLE Y COLOR*/
+  border: 0.25rem solid var(--color-secundario-oscuro);
+  margin: 0.625rem;
+  font-size: 1.5rem;
+  width: 50%;
+  /*CADA UNO DE LOS 2 COMICS OCUPARÁ TODO EL ALTO DEL CONTENEDOR PADRE COMIC*/
+  max-height: 100%;
 }
 
 .comic__title {
-  font-size: 2vw;
+  /*SE APLICA EL shorthand font-weigth, font-size y font-family*/
+  font: bold 1.3rem Arial;
   text-align: center;
   background: var(--color-secundario-oscuro);
-  padding: .9375rem 0;
-  margin: -0.3125rem 0 0 0;
+  padding: 0.9375rem 0;
+  /* SE DA UN MARGÍN DE 5PX PARA OBTENER UN ESPACIO ENTRE LOS  h3 CON EL ESPACIO RESTANTE DEL CONTENEDOR COMIC*/
+  margin: 0.3125rem;
+  /*Se da una altura máxima para evitar saltos de línea con el texto del h3*/
+  max-height: 3.125rem;
 }
 
 .comic__argument {
-  font-size: 2vw;
-  padding: 0.625rem 0.625rem;
-  margin: 0 auto;
+  padding: 0.625rem;
+  /*SE QUITA LOS MARGENES PARA QUE EL PÁRRAFO OCUPE TODO EL ESPACIO SOBRANTE*/
+  margin: 0;
   background-color: var(--color-blanco);
   color: var(--color-negro);
   text-align: justify;
-  font-weight: bolder;
+  font: bold 1.2rem Arial;
+  /*SE DA UNA ALTURA FIJA Y UNA ALTURA MÁXIMA PARA EVITAR QUE LA IMAGEN SE MUEVA */
+  height: 6.25rem;
+  /*Cuando se encoja la ventana, el contenedor del párrafo no aumente y cambie la posición o tomaño de la portada del comic*/
+  max-height: 7.1875rem;
+}
+
+.comic__cover-container {
+  /*EL CONTENEDOR DE LA PORTADA DEL COMIC TENDRÁ UNA ALTURA FIJA PARA QUE LA PORTADA OCUPE TODO EL ALTO DEL CONTENEDOR*/
+  height: 34.375rem;
 }
 
 .comic__cover {
-  height: auto;
-  /* Se coloca la propiedad max-width para que la propiedad no se pixelee al pasar el tamaño original */
-  max-width: 100%;
+  /*lA ALTURA DE LA PORTADA DEL COMIC OCUPARÁ EL TOTAL DEL ALTO DE SU CONTENEDOR PADRE*/
+  height: 100%;
+  /* Se coloca la propiedad max-width para que la imagen no se pixelee al pasar el tamaño original */
+  width: 100%;
+  /*Para que la imagen ocupe todo su contenedor y no altere su resolución*/
   object-fit: cover;
-  /* object-position: center top; */
+  /*Se da una posición en su eje X y eje Y*/
+  object-position: center top;
 }
 
 @media screen and (max-width:48rem) {
