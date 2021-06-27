@@ -77,24 +77,25 @@
 @media screen and (max-width:48rem) {
   .main {
     /*SE AUMENTA LA ALTURA ESTÁTICA DE LA GRILLA MAIN PARA QUE LAS PORTADAS OCUPEN TODO EL ALTO SIN SOBREPONERSE AL FOOTER*/
-    height: 46.875rem;
+    height: 54.375rem;
   }
   /*DISMINUIR EL TAMAÑO DEL TÍTULO DE LA SECCIÓN*/
   .section__title {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
   /*Los elementos del contenedor de la portada de los comics lo cambiamos en columna y lo colocamos al centro*/
   .comic {
     flex-direction: column;
     align-items: center;
     /*Se da una altura máxima de 700px*/
-    max-height: 43.75rem;
+    max-height: 51.25rem;
   }
   .comic__item {
     /*SE DA 80% PARA QUE OCUPE MÁS ANCHO*/
     width: 80%;
+    height: 25rem;
     /*SE ESTABLECE UNA ALTURA MÁXIMA DE 330px*/
-    max-height: 20.625rem;
+    max-height: 26.25rem;
   }
   .comic__title {
     font-size: 1.2rem;
@@ -104,12 +105,16 @@
     line-height: 0.0625rem;
   }
   .comic__argument {
-    font-size: 1rem;
-    /*SE REDUCE LA ALTURA DEL ARGUMENTO DEL COMIC*/
-    height: 5.1875rem;
+    /*SE ELIMINAN LOS PADDING DE LA VERSIÓN DESKTOP*/
+    padding: 0;
+    /*SE QUITA SU ALTURA*/
+    height: 0;
+    /*SE OCULTA EL ELEMENTO*/
+    visibility: hidden;
   }
   .comic__cover-container {
     /*SE DA UNA ALTURA ESPECÍFICA AL CONTENEDOR DE LA PORTADA DEL COMIC*/
-    height: 12.5rem;
+    height: 21.25rem;
+    cursor: pointer;
   }
 }
