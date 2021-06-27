@@ -1,63 +1,77 @@
 .footer {
-  min-height: 25vh;
-}
-
-.footer__container {
-  height: 100%;
+  /*SE ESTABLECE UNA ALTURA FIJA AL FOOTER*/
+  height: 12.5rem;
+  background: var(--fondo-claro);
+  min-width: 100%;
   display: flex;
   justify-content: space-between;
-  border-top: 0.0625rem solid var(--color-blanco);
 }
 
 .description {
   color: var(--color-blanco);
   display: flex;
   flex-direction: column;
-  margin-bottom: 0.9375rem;
+  /*SE PONE UN ANCHO MÁXIMO PARA EVITAR QUE SE JUNTE CON EL ELEMENTO DE LA DERECHA*/
+  max-width: 50%;
+  padding: 0.625rem;
+  /*PARA EVITAR QUE EL TEXTO DE LA DESCRIPCIÓN SOBREPASE EL ALTO DEL FOOTER*/
+  max-height: 100%;
 }
 
 .description__question {
-  font: italic bold 150% Georgia, serif;
-  margin-bottom: 0.625rem;
+  font: italic bold 20px Georgia, serif;
 }
 
 .description__answer {
-  font: bold 100% Arial, sans-serif;
+  font: bold 1rem Arial, sans-serif;
+  /*SE DA UNA ALTURA DE LÍNEA PARA SEPARAR LAS DOS LÍNEAS DEL PÁRRAFO*/
+  line-height: 1.25rem;
+  text-align: justify;
 }
 
 .social__footer {
-  margin: auto;
-}
-
-.social__footer-border {
-  border-left: 0.0625rem solid var(--color-secundario-claro);
-  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+  /*AL CAMBIAR LA ORIENTACIÓN EN COLUMNA PARA CENTRARLO EN HORIZONTAL SE USURÁ EL JUSTIFY Y NO EL ALIGN*/
+  justify-content: center;
+  max-width: 25%;
+  /* margin-right: 10px; */
 }
 
 .social__footer-subtitle {
+  text-align: center;
+  font: bold 1rem;
   color: var(--color-secundario-oscuro);
 }
 
-@media screen and (max-width:50rem) {
-  .footer__container {
+.logo-footer {
+  align-self: center;
+  margin: 0 0.3125rem;
+}
+
+@media screen and (max-width:48rem) {
+  .footer {
     flex-direction: column;
-    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+    /*SE DA UNA ALTURA MÍNIMA PARA QUE OCUPE TODOS ELEMENTOS DEL FOOTER EN COLUMNA*/
+    min-height: 25rem;
+    /*SE CENTRA ALIGN-ITEMS EN LUGAR DEL JUSTIFY PORQUE SE CAMBIÓ LA DIRECCIÓN A COLUMNA*/
+    align-items: center;
+  }
+  .description {
+    /*PARA QUE DEJE UN ANCHO DE 5% EN LOS EXTREMOS DERECHO E IZQUIERDO*/
+    max-width: 90%;
+    margin: 0;
   }
   .description__question {
     text-align: center;
   }
-  .description__answer {
-    font: bold 120% Arial, sans-serif;
-    text-align: justify;
-  }
   .social__footer {
-    margin-bottom: 0.9375rem;
+    margin-bottom: 1.25rem;
   }
-  .social__footer-border {
-    border: none;
-    padding-left: 0;
-  }
-  .social__title {
-    font: bold 150% Arial, sans-serif;
+  .logo-footer {
+    /*SE ELIMINA EL MARGEN QUE SE DIÓ EN LA VISTA EN DESKTOP*/
+    margin-right: 0;
+    margin-bottom: 0.3125rem;
   }
 }

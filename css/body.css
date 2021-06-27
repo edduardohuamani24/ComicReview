@@ -55,8 +55,7 @@ body {
 
 @media screen and (max-width:48rem) {
   body {
-    font-size: 0.75rem;
-    /* overflow: hidden; */
+    font-size: 0.875rem;
   }
   .container {
     grid-template: 4fr/ 1fr;
