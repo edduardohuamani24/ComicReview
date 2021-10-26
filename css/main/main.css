@@ -102,7 +102,8 @@
   .comic__title {
     font-size: 1.2rem;
     /*SE DA UNA ALTURA FIJA AL H3 QUE CONTIENE EL NOMBRE DE CADA COMIC*/
-    height: 0.125rem;
+    height: auto;
+    /* height: 2px; */
     /*sE DA UN line-height para ajustar el texto del h3 que bajó al cambiar la altura*/
     line-height: 0.0625rem;
   }

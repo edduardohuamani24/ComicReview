@@ -4,10 +4,11 @@
   "description": "El proyecto LaloReseñas contiene consejos de como empezar a leer determinando personaje de historietas.La maquetación del proyecto fue inspirada por diversas páginas web especializadas en comics. El header se realizó en base a la antigua página web de panini comics de España. Además, el nav fue hecho a base de la web de Tomos y grapas.",
   "main": "js/main.js",
   "scripts": {
+    "start": "webpack serve --mode development --open",
     "dev": "webpack --mode development",
     "build": "webpack --mode production",
-     "predeploy":"npm run build",
-    "deploy":"gh-pages -d dist -b master"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist -b master"
   },
   "repository": {
     "type": "git",
@@ -27,7 +28,8 @@
     "push-dir": "^0.4.1",
     "style-loader": "^3.2.1",
     "webpack": "^5.52.0",
-    "webpack-cli": "^4.8.0"
+    "webpack-cli": "^4.8.0",
+    "webpack-dev-server": "^4.3.1"
   },
   "dependencies": {
     "lodash-es": "^4.17.21"

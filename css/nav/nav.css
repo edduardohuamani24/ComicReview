@@ -80,7 +80,7 @@
 @media screen and (max-width: 48rem) {
   .nav {
     height: 100vh;
-    width: 85%;
+    width: 90%;
     background: none;
     border: none;
     transition: none;
@@ -161,6 +161,14 @@
     /*LA TERCERA BARRA SE REALIZA UNA ROTACIÓN DE - 45 GRADOS*/
     /*PARA FORMAR UNA X con las barras del botón hamburger se realiza un traslate dando un -11px en su eje x u horizontal*/
     transform: rotate(45deg) translate(-0.6875rem);
+  }
+  /*Clase esconder barra espaciadoa Y*/
+  .scroll-hidden {
+    overflow-y: hidden;
+  }
+  .show-button {
+    /*SE COLOCA UN Z INDEX PARA QUE FUNCIONE LA LUPA, CUANDO EL NAV EN MODO RESPONSIVE CUBRA TODA LA PANTALLA*/
+    z-index: var(--z-index-search_btn);
   }
   /****ANIMACIONES****/
   @keyframes muestraMenu {

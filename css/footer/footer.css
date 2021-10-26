@@ -2,7 +2,7 @@
   /*SE ESTABLECE UNA ALTURA FIJA AL FOOTER*/
   height: 12.5rem;
   background: var(--fondo-claro);
-  min-width: 100%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }
@@ -67,11 +67,24 @@
     text-align: center;
   }
   .social__footer {
-    margin-bottom: 1.25rem;
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 4.375rem;
   }
+  .social__footer-subtitle {
+    width: 100%;
+  }
+  .social__list {
+    padding: 0;
+    justify-content: space-evenly;
+  }
+  /* .social__item {
+    margin: 0 10px 0;
+  } */
   .logo-footer {
     /*SE ELIMINA EL MARGEN QUE SE DIÓ EN LA VISTA EN DESKTOP*/
-    margin-right: 0;
-    margin-bottom: 0.3125rem;
+    /* margin-right: 0;
+    margin-bottom: 0.3125rem; */
+    display: none;
   }
 }

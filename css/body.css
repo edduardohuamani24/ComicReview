@@ -12,7 +12,8 @@
   --facebook: #3b5998;
   --twitter: #00acee;
   --youtube: #c4302b;
-  --instagram: #ff0080
+  --instagram: #ff0080;
+  --z-index-search_btn: 2;
 }
 
 * {
