@@ -126,6 +126,8 @@
     background: none;
     border: none;
     cursor: pointer;
+    /*prueba*/
+    z-index: 2;
   }
   /*EL FORM DEL INPUT ESTÁRA OCULTO Y PARA VISUALIZARCE SE REALIZARÁ MEDIANTE UN CLICK EN EL ICONO*/
   .search-responsive {
@@ -138,6 +140,8 @@
   }
   .search__input {
     border-radius: 8125em;
+    /*prueba*/
+    z-index: 2;
   }
   /*El botón del input en modo desktop se oculta*/
   .search__button {

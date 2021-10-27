@@ -166,7 +166,7 @@
   .scroll-hidden {
     overflow-y: hidden;
   }
-  .show-button {
+  .elem-hidden {
     /*SE COLOCA UN Z INDEX PARA QUE FUNCIONE LA LUPA, CUANDO EL NAV EN MODO RESPONSIVE CUBRA TODA LA PANTALLA*/
     z-index: var(--z-index-search_btn);
   }
