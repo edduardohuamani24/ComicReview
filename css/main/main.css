@@ -43,7 +43,8 @@
   /* SE DA UN MARGÍN DE 5PX PARA OBTENER UN ESPACIO ENTRE LOS  h3 CON EL ESPACIO RESTANTE DEL CONTENEDOR COMIC*/
   margin: 0.3125rem;
   /*Se da una altura máxima para evitar saltos de línea con el texto del h3*/
-  max-height: 3.125rem;
+  /* height: 2.5rem; */
+  max-height: 50px;
 }
 
 .comic__argument {
@@ -100,10 +101,8 @@
     max-height: 26.25rem;
   }
   .comic__title {
-    font-size: 1.2rem;
-    /*SE DA UNA ALTURA FIJA AL H3 QUE CONTIENE EL NOMBRE DE CADA COMIC*/
-    height: auto;
-    /* height: 2px; */
+    font-size: 1rem;
+    /* height: 80px; */
     /*sE DA UN line-height para ajustar el texto del h3 que bajó al cambiar la altura*/
     line-height: 0.0625rem;
   }
